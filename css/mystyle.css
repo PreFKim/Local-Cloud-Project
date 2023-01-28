@@ -1,0 +1,53 @@
+.post-cata {
+  background-color: #db4437;
+  padding: 8px 6px; /* 높이 늘이려면 가운데에 15px추가*/
+  border-radius: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  line-height: 1;	
+}
+
+
+.main-menu {
+  list-style: none;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.main-menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.main-menu li .sub-menu {
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 0px 0;
+  left: -100px;
+  top: 0%;
+  /*margin-top: 50px; /*아래서 올라가게 하려면 주석삭제*/
+  
+  visibility: hidden;
+  opacity: 0; 
+  background: #fff;
+  z-index: 99;
+  
+  transition: all 0.5s;
+  box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.long-text {
+  word-break: break-word;  /* 길이 초과시 다음 칸으로 넘김*/
+  white-space: pre-wrap; /* 줄바꿈 문자 적용*/
+}
